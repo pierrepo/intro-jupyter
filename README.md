@@ -9,7 +9,7 @@ Pierre Poulain
 
 Cliquez sur le bouton ci-dessous pour lancer une démo live de Jupyter Lab :
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-demo/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master?urlpath=lab)
 
 avec l'interface classique :
 
