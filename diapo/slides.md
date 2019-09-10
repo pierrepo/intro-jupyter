@@ -65,7 +65,7 @@ template: contentleft
 
 - Créer un notebook Jupyter.
 
-- Citer les bonnes pratiques pour construire un notebok.
+- Utiliser les bonnes pratiques pour construire un notebok.
 
 ---
 template: contentleft
@@ -76,13 +76,13 @@ template: contentleft
 
 IPython, 2014... (Brian Granger & Fernando Perez)
 
----
+--
 
-<img src="img/20180624_prix_ACM_Jupyter_SylvainCorlay_1010945292877754368.png"
-     height="600px"
-     style="margin-top:-30px;">
-</img>
+.center[
+    <img src="img/20180624_prix_ACM_Jupyter_SylvainCorlay_1010945292877754368.png"
+         height="400px">
 
+]
 ---
 template: contentleft
 
@@ -181,19 +181,27 @@ Intro :
 - article : [JupyterLab is Ready for Users](https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906)
 - vidéo : [Sea change: What happens when Jupyter becomes pervasive at a university?](https://www.oreilly.com/ideas/sea-change-what-happens-when-jupyter-becomes-pervasive-at-a-university) (Fernando Perez, 2018)
 
+
 ---
 template: contentleft
 
-# Référence
+# Pour aller plus loin
 
-[Ten simple rules for writing and sharing computational analyses in Jupyter Notebooks](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007), Rule *et al.*, PLOS Comput. Biol., 2019.<br />
-    + [exemple](https://github.com/jupyter-guide/ten-rules-jupyter)
+[Ten simple rules for writing and sharing computational analyses in Jupyter Notebooks](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1007007),   
+Rule *et al.*, PLOS Comput. Biol., 2019.  
+[> exemples de notebooks](https://github.com/jupyter-guide/ten-rules-jupyter)
 
 <br />
 
-[The Scientific Paper Is Obsolete](https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/), Somers, The Atlantic, 2018.
+[The Scientific Paper Is Obsolete](https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/),  
+Somers, The Atlantic, 2018.
 
+<br />
 
+Dashboarding avec Voila :
+- [vidéo](https://www.youtube.com/watch?v=VtchVpoSdoQ), M. Breddels et M. Renou, SciPy 2019.
+- [demo](https://github.com/maartenbreddels/scipy-voila-demo)
+  
 ---
 template: contentleft
 
