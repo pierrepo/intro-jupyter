@@ -7,9 +7,7 @@ dependencies:
     - pandas
     - matplotlib
     - jupyterlab
-#    - r-essentials
     - r-irkernel
-    - rpy2
     - ipywidgets
     - nodejs
  
