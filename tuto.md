@@ -24,7 +24,7 @@ Chargez ce nouvel environnement, puis activez ensuite les widgets pour Jupyter L
 $ jupyter labextension install @jupyter-widgets/jupyterlab-manager
 ```
 
-Lancez Jupyter Lab avec la commande :
+Lancez enfin Jupyter Lab :
 ```
 $ jupyter lab
 ```
