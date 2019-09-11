@@ -12,6 +12,8 @@ Clonez le dépôt <https://github.com/pierrepo/intro-jupyter/>
 
 Chargez l'environnement conda `ppoulain-jupyter-2019`.
 
+Lancez JupyterLab.
+
 Explorez et modifiez les différents notebooks.
 
 
