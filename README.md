@@ -4,6 +4,8 @@ M2 BI 2019-2020
 
 Pierre Poulain
 
+[Diapo](https://pierrepo.github.io/intro-jupyter/diapo/) | [Tutoriel](https://pierrepo.github.io/intro-jupyter/tuto)
+
 
 ## Demo Jupyter notebooks
 
