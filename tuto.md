@@ -19,7 +19,7 @@ Explorez et modifiez les différents notebooks.
 
 ## Installer JupyterLab
 
-En utilisant le fichier yaml `environment.yml`, créez votre propre environnement dans le répertoire `~/conda-envs/jupyter`.
+En utilisant le fichier yaml `environment.yml`, créez votre propre environnement.
 
 Chargez ce nouvel environnement, puis activez ensuite les widgets pour Jupyter Lab avec la commande :
 ```
