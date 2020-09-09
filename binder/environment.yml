@@ -8,7 +8,6 @@ dependencies:
     - scipy
     - pandas
     - matplotlib
-    - bokeh
     - jupyterlab
     - ipywidgets
     - r-irkernel
