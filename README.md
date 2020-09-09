@@ -1,10 +1,8 @@
 # Introduction à Jupyter
 
-M2 BI 2019-2020
-
 Pierre Poulain
 
-[Diapo](https://pierrepo.github.io/intro-jupyter/diapo/) | [Tutoriel](https://pierrepo.github.io/intro-jupyter/tuto)
+[Diapo](https://pierrepo.github.io/intro-jupyter/diapo/) | [Tutoriel M2 BI](https://pierrepo.github.io/intro-jupyter/tuto_M2BI.md) | [Tutoriel DUBii(https://pierrepo.github.io/intro-jupyter/tuto_DUBII.md)
 
 
 ## Demo Jupyter notebooks
