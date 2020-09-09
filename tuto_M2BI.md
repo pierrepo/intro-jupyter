@@ -11,6 +11,11 @@ Dans un environnement Unix, clonez ce dépôt GitHub :
 $ git clone https://github.com/pierrepo/intro-jupyter.git
 ```
 
+Etrez dans le répertoire `intro-jupyter` ainsi créé :
+```
+$ cd intro-jupyter
+```
+
 Créez ensuite l'environnement nécessaire avec conda :
 ```
 $ conda env create -f binder/environment.yml
