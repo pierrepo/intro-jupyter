@@ -4,6 +4,8 @@ author: Pierre Poulain
 license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 ---
 
+Tutoriel M2 BI
+
 # Préparation de l'environnement local
 
 Dans un environnement Unix, clonez ce dépôt GitHub :
@@ -11,7 +13,7 @@ Dans un environnement Unix, clonez ce dépôt GitHub :
 $ git clone https://github.com/pierrepo/intro-jupyter.git
 ```
 
-Etrez dans le répertoire `intro-jupyter` ainsi créé :
+Entrez dans le répertoire `intro-jupyter` ainsi créé :
 ```
 $ cd intro-jupyter
 ```
@@ -21,7 +23,7 @@ Créez ensuite l'environnement nécessaire avec conda :
 $ conda env create -f binder/environment.yml
 ```
 
-Activez le nouvel environnement ainsi créé :
+Activez le nouvel environnement :
 ```
 $ conda activate jupyter-demo
 ```
@@ -31,7 +33,7 @@ Installez certaines extensions pour Jupyter Lab avec la commande :
 $ bash binder/postBuild
 ```
 
-Enfin, lancez Jupyter. Soit l'inteface classique :
+Enfin, lancez Jupyter. Soit l'interface classique :
 ```
 $ jupyter notebook
 ```

@@ -4,6 +4,8 @@ author: Pierre Poulain
 license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 ---
 
+Tutoriel DUBii
+
 # Préparation de l'environnement local
 
 Sur vos machines locales (= **pas sur le cluster**), chargez l'environnement conda qui contient Jupyter :
@@ -30,7 +32,7 @@ Dirigez-vous ensuite dans ce répertoire :
 $ cd ~/dubii/python/jupyter
 ```
 
-Puis, lancez Jupyter. Soit l'inteface classique :
+Puis, lancez Jupyter. Soit l'interface classique :
 ```
 $ jupyter notebook
 ```
