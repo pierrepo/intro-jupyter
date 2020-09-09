@@ -1,4 +1,4 @@
-name: jupyter
+name: demo-jupyter
 channels:
     - defaults
     - conda-forge
