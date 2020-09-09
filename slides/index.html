@@ -1,0 +1,548 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Jupyter et ses notebooks</title>
+
+		<link rel="stylesheet" href="assets/reveal.js/css/reveal.css">
+		<link rel="stylesheet" href="assets/reveal.js/css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="assets/reveal.js/lib/css/zenburn.css">
+
+		<!-- custom css -->
+		<link rel="stylesheet" href="assets/css/custom.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/reveal.js/css/print/pdf.css' : 'assets/reveal.js/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+<section data-markdown
+         data-separator="^---"
+		 data-separator-notes="^Notes:">
+<textarea data-template>
+
+# Jupyter et ses notebooks
+
+<br />
+<br />
+<br />
+
+2020
+
+<div class="container" style="margin-top: 50px;">
+<div class="col">
+	<img src="assets/img/Universite_Paris_logo_horizontal_2000px.png"
+		height="100px" style="vertical-align:midle;">
+   </img>
+</div>
+<div class="col">
+
+</div>
+<div class="col" style="font-size: 1.2rem; text-align:right;">
+	Pierre Poulain <br />
+	pierre.poulain@u-paris.fr <br />
+	@pierrepo
+</div>	
+</div>
+
+<br />
+<br />
+
+<div style="position: fixed; left: 0px; bottom: 20px; z-index: 31; font-size: 15px; line-height: 1; color: #c0c0c0;">
+	<p>
+		Except where otherwise noted, this content is licensed under 
+		a Creative Commons Attribution-ShareAlike 4.0 International license 
+		(CC BY-SA 4.0).
+	</p>
+</div>
+
+--- 
+
+<!-- .slide: style="text-align: left;" -->
+
+## Objectifs d'apprentissage
+
+- Décrire l'écosystème Jupyter.
+- Installer Jupyter Lab.
+- Créer un notebook Jupyter.
+- Utiliser les bonnes pratiques pour construire un notebook.
+
+--- 
+
+<!-- .slide: style="text-align: left;" -->
+
+## Notebook (en science)
+
+- « cahier électronique d'analyses » <!-- .element: class="fragment" -->
+- document : <!-- .element: class="fragment" -->
+	- code + résultats + graphiques
+	- explications + images + formules mathématiques...
+
+<br />
+<br />
+
+<div class="fragment" style="margin-top: 100px;">
+Concept de « <em>Literate programming</em> » de Donald E. Knuth (1984) :
+
+<cite>Treat a program as literature understandable to human beings</cite>
+</div>
+
+---
+
+<img src="assets/img/notebook_Mathematica.png"
+	 height="620px" style="margin-top:-50px; ">
+</img>
+
+<div class="ref" style="text-align: left;">
+	Source : <a href="https://www.wolfram.com/language/fast-introduction-for-math-students/en/notebook-documents/">Wolfram / Mathematica</a>
+</div>
+
+
+--- 
+
+<img src="assets/img/rmarkdown.png"
+	 height="600px" style="margin:0px; ">
+</img>
+
+<div class="ref" style="text-align: left;">
+	Source : <a href="https://rmarkdown.rstudio.com/authoring_quick_tour.html">R Markdown Quick Tour</a>
+</div>
+
+---
+
+<img src="assets/img/lorenz.jpg"
+	 height="600px" style="margin-top:-30px;">
+</img>
+
+<div class="ref" style="margin-top: 10px;text-align: left;">
+	Source : <a href="https://sinews.siam.org/Details-Page/jupyter-tools-for-the-life-cycle-of-a-computational-idea">Jupyter: Tools for the Life Cycle of a Computational Idea</a>,
+	Siam News, 2018.
+</div>
+
+---
+
+<!-- .slide: style="text-align: left;" -->
+
+### Une idée d'hier, aujourd'hui techniquement possible... 
+
+<br />
+
+<div style="text-align: center;">
+
+#### The Scientific Paper Is Obsolete
+
+<img src="assets/img/scientific_paper_obsolete.gif" heigth="400px">
+
+</div>
+
+<div class="ref">
+	Source : <a href="https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/">The Atlantic</a>, 
+	05/04/2018.
+</div>
+
+
+---
+
+<!-- .slide: style="text-align: left;" -->
+
+### Une idée d'hier, aujourd'hui techniquement possible... 
+
+<br />
+
+An open RNA-Seq data analysis pipeline tutorial with an example of reprocessing data from a recent Zika virus study : 
+- [papier](https://f1000research.com/articles/5-1574/v1), F1000 Research, Wang & Ma'ayan, **2016**.
+- [notebook](http://nbviewer.jupyter.org/github/maayanlab/Zika-RNAseq-Pipeline/blob/master/Zika.ipynb)
+
+---
+
+<!-- .slide: style="text-align:left;font-size:2rem;"-->
+
+### Des perspectives
+
+<div class="fragment" style="margin-top:50px">
+<a href="https://www.nature.com/news/interactive-notebooks-sharing-the-code-1.16261">Interactive notebooks: Sharing the code</a>,
+Shen, Nature, 2014.
+	<div style="font-style:italic;font-size:2rem;">
+	"We used to speak two different languages. I would talk about the biology and she would talk about coding. 
+	Now we have common ground; we can <strong>communicate to each other better</strong>. 
+	This accelerates our research." she says.
+	</div>
+</div>
+
+<br />
+
+<div class="fragment" style="margin-top:50px">
+<a href="https://www.nature.com/articles/d41586-018-07196-1">By Jupyter it all makes sense</a>, Perkel, Nature, 2018.
+	<div style="font-style:italic;font-size:2rem;">
+	Thanks to an <strong>improved interface</strong> and tools for <strong>running in the cloud</strong>, 
+	take-up of the computational notebook is rocketing
+	</div>
+</div>
+</div>
+
+---
+
+## Projet Jupyter
+
+<!-- .slide: style="text-align: left;" -->
+
+<div class="container">
+
+<div class="col fragment">
+<img src="assets/img/jupyter-logo.svg"
+	height="250px" style="vertical-align:midle;">
+</img>
+<https://jupyter.org/>
+
+<div style="color:#b9b9b9;">
+2001 - F Pérez (iPython) 
+</div>
+
+2014 - F Pérez & B E Granger
+</div>
+
+<div class="col fragment">
+<img src="assets/img/20180624_prix_ACM_Jupyter_SylvainCorlay_1010945292877754368.png"
+	height="475px" style="vertical-align:midle;">
+</img>
+</div>
+		
+</div>
+
+---
+
+<!-- .slide: style="text-align: left;" -->
+
+## Jupyter notebook
+
+<br />
+
+- « cahier électronique d'analyses »
+- dans un navigateur web <!-- .element: class="fragment" -->
+- Julia, Python, R, C++...  <!-- .element: class="fragment" -->
+- code + résultats + graphiques + explications + formules...<!-- .element: class="fragment" -->
+- export : py, R, md, html, pdf <!-- .element: class="fragment" -->
+
+<br />
+<br />
+
+<div class="fragment" style="margin-top: 150px; font-size: 1.5rem;">
+	Une intro : 
+	<a href="https://sinews.siam.org/Details-Page/jupyter-tools-for-the-life-cycle-of-a-computational-idea">Jupyter: Tools for the Life Cycle of a Computational Idea</a>,
+	Siam News, 2018.
+</div>
+
+---
+
+<img src="assets/img/Jupyter_notebook_Lindsey_Heagy.png"
+	 height="550px">
+</img>
+
+<div class="ref" style="margin-top: 10px;text-align: left;">
+	Source : <a href="https://speakerdeck.com/lheagy/jupyter-meets-the-earth-from-geophysical-inversions-to-open-collaborative-geoscience">Jupyter meets the Earth: from geophysical inversions to open, collaborative geoscience</a>,
+	Lindsey Heagy, 2019.
+</div>
+
+---
+
+<!-- .slide: style="text-align: left; font-size: 2rem;" -->
+
+## Jupyter Notebooks
+
+<div class="fragment">
+ +8,8 millions notebooks sur GitHub
+ <div class="ref">
+	Source : <a href="http://nbviewer.jupyter.org/github/parente/nbestimate/blob/master/estimate.ipynb">Estimate of Public Jupyter Notebooks on GitHub</a>
+	(10/09/2020)
+</div>
+</div>
+
+<div class="fragment" style="margin-top:50px">
+Utilisés en 1re année à Berkeley (1800 étudiants) <br />
+
+<cite>
+	"There would have been too many obstacles for students to easily gain access to the tools and data that they need."
+</cite>
+
+<div class="ref">
+Source : <a href="https://data.berkeley.edu/news/coursefuture">The course of the future – and the technology behind it</a>
+</div>
+</div>
+
+<div class="fragment" style="margin-top:50px">
+Utilisés chez Google, Microsoft, IBM, Bloomberg, Nasa, SoundCloud, NetFlix, La banque mondiale <a href="https://jupyter.org/">...</a>
+</div>
+		
+<div class="fragment" style="margin-top:50px">
+<a href="https://qz.com/1417145/economics-nobel-laureate-paul-romer-is-a-python-programming-convert/">This year’s Nobel Prize in economics was awarded to a Python convert</a>
+<div style="font-style:italic;font-size:2rem;">
+"Instead of using Mathematica, Romer discovered that he could use a Jupyter notebook for sharing his research." (2018)
+</div>
+</div>
+
+---
+
+<!-- .slide: style="text-align: left;" -->
+
+## Exemples
+
+<br />
+
+[A gallery of interesting Jupyter Notebooks](https://github.com/jupyter/jupyter/wiki/A-gallery-of-interesting-Jupyter-Notebooks)
+<br />
+<br />
+
+[Bioinformatics with Python Cookbook](https://github.com/tiagoantao/bioinf-python/blob/master/notebooks/Welcome.ipynb) ([FastQ files](https://github.com/tiagoantao/bioinf-python/blob/f2e05df2d7baa54f9fbbc246b2526ee57d8b451c/notebooks/01_NGS/Working_with_FASTQ.ipynb)) ([PDB files](https://github.com/tiagoantao/bioinf-python/blob/f2e05df2d7baa54f9fbbc246b2526ee57d8b451c/notebooks/06_Prot/Stats.ipynb))
+<br />
+<br />
+
+Génération de notebooks : [BioJupies](https://amp.pharm.mssm.edu/biojupies/) / GEO : GSE116087
+
+---
+
+<!-- .slide: style="text-align: left;" -->
+
+## L'écosystème Jupyter
+
+<div style="text-align: center;">
+	Environnement « classique »
+	<img src="assets/img/jupyter-classique.png"
+	height="400px">
+</div>
+<br />
+
+---
+
+<!-- .slide: style="text-align: left;" -->
+
+## L'écosystème Jupyter : Jupyter **lab**
+
+<div class="fragment">
+
+<div style="text-align: center;">
+	Environnement de développement et d'analyse
+	<img src="assets/img/jupyterlab.png"
+	height="400px">
+<div class="ref" style="margin-top:-30px;">
+	Source : <a href="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906">Project Jupyter</a>, CC BY-SA.
+</div>
+</div>
+<br />
+<div style="font-size:1.2rem;">
+vidéo : <a href="https://www.youtube.com/watch?v=w7jq4XgwLJQ">JupyterLab: The Next-Generation Jupyter Frontend</a>, 2017.
+<br />
+article : <a href="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f039b8906">JupyterLab is Ready for Users</a>, 2018.
+</div>
+
+</div>
+
+---
+
+<!-- .slide: style="text-align: left;" -->
+
+## Installation
+
+Depuis un environnement conda :
+```
+$ conda install -c conda-forge jupyterlab
+```
+
+Lancement :
+```
+$ jupyter lab
+```
+
+Pour l'interface « classique » : 
+```
+$ jupyter notebook
+```
+
+
+---
+
+<!-- .slide: style="text-align: left;" -->
+
+## Démo
+
+[Try Jupyter](https://jupyter.org/try)
+
+---
+
+<!-- .slide: data-background="#a1f4c5" style="text-align:left;font-size:2rem;"-->
+
+## Exercice 1
+
+Notebook `intro.ipynb`
+
+<https://github.com/pierrepo/intro-jupyter>
+
+
+---
+
+<!-- .slide: style="text-align:left; "-->
+
+## Markdown
+
+<br />
+
+- langage de balises *simple*
+- utilisé pour la partie « littérature » des notebooks
+
+<br />
+<br />
+<br />
+
+<div class="fragment">
+
+Références : 
+
+- https://fr.wikipedia.org/wiki/Markdown
+- https://guides.github.com/features/mastering-markdown/
+
+</div>
+
+---
+
+<img src="assets/img/markdown.png"
+	 height="650px" style="margin-top:-30px;">
+</img>
+
+---
+
+<!-- .slide: data-background="#a1f4c5" style="text-align:left;font-size:2rem;"-->
+
+## Exercice 2
+
+Notebook `markdown.ipynb`
+
+<https://github.com/pierrepo/intro-jupyter>
+
+---
+
+<!-- .slide: data-background="#a1f4c5" style="text-align:left;font-size:2rem;"-->
+
+## Exercice 3
+
+Notebook `matplotlib.ipynb`
+
+<https://github.com/pierrepo/intro-jupyter>
+
+---
+
+<!-- .slide: data-background="#a1f4c5" style="text-align:left;font-size:2rem;"-->
+
+## Exercice 4 - fonctionnalités avancées
+
+Utilisation d'un *kernel* différent de Python :
+
+- Notebook `demo-R.ipynb`
+
+Interactivité avec *ipywidgets* :
+
+- Notebook `ipywidgets.ipynb`
+
+
+<https://github.com/pierrepo/intro-jupyter>
+
+---
+
+<!-- .slide: style="text-align:left; "-->
+
+## Conclusion
+
+Notebooks Jupyter :
+
+- polyvalents (Python, R...)
+- utiles pour l'**analyse exploratoire** et le **reporting**
+- interface d'échange biologiste / bioinfo 
+
+<div class="fragment" style="margin-top: 50px;">
+
+On dit ce qu'on fait, pourquoi on le fait et ce qu'on obtient.
+
+On [accompagne](https://github.com/pierrepo/autoclasswrapper), on explique des résultats ou des analyses.
+
+</div>
+
+
+<div class="fragment" style="margin-top: 50px;">
+
+⚠️ Attention :
+
+- On ne développe pas un gros code Python dans un notebook.
+
+</div>
+
+---
+
+<!-- .slide: style="text-align:left;font-size:2rem;"-->
+
+## Pour aller plus loin... 
+
+Ten simple rules for writing and sharing computational analyses in Jupyter Notebooks<br />
+Rule et al., *PLOS Comput. Biol.*, 2019.<br />
+DOI [10.1371/journal.pcbi.1007007]( https://doi.org/10.1371/journal.pcbi.1007007)
+
+<div class="fragment" style="margin-top: 50px;">
+
+Dashboarding avec Voila :
+- [vidéo](https://www.youtube.com/watch?v=VtchVpoSdoQ), M. Breddels et M. Renou, SciPy 2019.
+
+</div>
+
+<div class="fragment" style="margin-top: 50px;">
+
+[JupyterCon](https://jupytercon.com/) 2020 : 5-17 octobre 
+
+</div>
+
+---
+
+</textarea>
+</section>
+			</div>
+		</div>
+
+		<footer>
+            <p>
+			CC BY-SA 4.0 / P. Poulain
+            </p>
+        </footer>
+
+		<script src="assets/reveal.js/lib/js/head.min.js"></script>
+		<script src="assets/reveal.js/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+
+				// Display the page number of the current slide
+				slideNumber: true,
+				// Push each slide change to the browser history
+				history: true,
+				// Vertical centering of slides
+				center: false,
+				dependencies: [
+					{ src: 'assets/reveal.js/plugin/markdown/marked.js' },
+					{ src: 'assets/reveal.js/plugin/markdown/markdown.js' },
+					{ src: 'assets/reveal.js/plugin/notes/notes.js', async: true },
+					{ src: 'assets/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'assets/reveal.js/plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
