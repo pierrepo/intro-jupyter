@@ -2,7 +2,7 @@
 
 Pierre Poulain
 
-[Diapo](https://pierrepo.github.io/intro-jupyter/diapo/) | [Tutoriel M2 BI](https://pierrepo.github.io/intro-jupyter/tuto_M2BI) | [Tutoriel DUBii](https://pierrepo.github.io/intro-jupyter/tuto_DUBII)
+[Diapo](https://pierrepo.github.io/intro-jupyter/slides/) | [Tutoriel M2 BI](https://pierrepo.github.io/intro-jupyter/tuto_M2BI) | [Tutoriel DUBii](https://pierrepo.github.io/intro-jupyter/tuto_DUBII)
 
 
 ## Demo Jupyter notebooks
