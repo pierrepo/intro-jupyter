@@ -1,9 +1,10 @@
-# Introduction à Jupyter DUBii 2020
+---
+title: Tutoriel Jupyter DUBii
+author: Pierre Poulain
+license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
+---
 
-[Diapo](https://pierrepo.github.io/intro-jupyter-dubii/slides/)
-
-
-## Préparation de l'environnement local
+# Préparation de l'environnement local
 
 Sur vos machines locales (= **pas sur le cluster**), chargez l'environnement conda qui contient Jupyter :
 ```
@@ -47,9 +48,9 @@ Remarque : fermer l'onglet de votre navigateur n'arrête pas le mini-serveur Jup
 
 
 
-## Exercices 
+# Exercices 
 
-### Exercice 1 : intro
+## Exercice 1 : intro
 
 Suivez les instructions de la section précédentes pour préparer votre environnement (répertoire + conda).
 
@@ -63,7 +64,7 @@ Lancez Jupyter puis ouvrez le notebook `intro.ipynb` en double-cliquant sur son 
 Suivez ensuite les instructions dans le notebook.
 
 
-### Exercice 2 : markdown
+## Exercice 2 : markdown
 
 Toujours dans le répertoire `~/dubii/python/jupyter`, téléchargez le notebook `markdown.ipynb` et l'image `logo.png` :
 
@@ -77,7 +78,7 @@ Ouvrez le notebook `markdown.ipynb` dans Jupyter en double-cliquant sur son nom.
 Suivez ensuite les instructions dans le notebook.
 
 
-### Exercice 3 : matplotlib
+## Exercice 3 : matplotlib
 
 Toujours dans le répertoire `~/dubii/python/jupyter`, téléchargez le notebook `matplotlib.ipynb` :
 
@@ -91,16 +92,16 @@ Suivez ensuite les instructions dans le notebook.
 
 
 
-## Jupyter en ligne
+# Jupyter en ligne
 
 Si Jupyter n'est pas installé localement sur votre machine, vous pouvez utiliser une version en ligne. Cette version peut prendre quelques minutes à charger, soyez patients et profitez-en pour vous préparer un thé en attendant.
 
 Interface classique :
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter-dubii/master)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master)
 
 Interface Jupyter Lab (recommandée) :
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter-dubii/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master?urlpath=lab)
 
 Les notebooks sont directement accessibles dans le répertoire `notebooks`.

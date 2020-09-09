@@ -1,53 +1,73 @@
 ---
-title: Tutoriel Jupyter
+title: Tutoriel Jupyter M2 BI
 author: Pierre Poulain
 license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 ---
 
-# Tutoriel
+# Préparation de l'environnement local
 
-## Lancer JupyterLab
-
-Clonez le dépôt <https://github.com/pierrepo/intro-jupyter/>
-
-Chargez l'environnement conda `ppoulain-jupyter-2019`.
-
-Lancez JupyterLab.
-
-Explorez et modifiez les différents notebooks.
-
-
-## Installer JupyterLab
-
-En utilisant le fichier yaml `environment.yml`, créez votre propre environnement.
-
-Chargez ce nouvel environnement, puis activez ensuite les widgets pour Jupyter Lab avec la commande :
+Dans un environnement Unix, clonez ce dépôt GitHub :
 ```
-$ jupyter labextension install @jupyter-widgets/jupyterlab-manager
+$ git clone https://github.com/pierrepo/intro-jupyter.git
 ```
 
-Lancez enfin Jupyter Lab :
+Créez ensuite l'environnement nécessaire avec conda :
 ```
-$ jupyter lab
+$ conda env create -f binder/environment.yml
 ```
 
-Vérifiez que les notebooks précédants fonctionnent.
+Activez le nouvel environnement ainsi créé :
+```
+$ conda activate jupyter-demo
+```
 
-Vous pouvez également tester l'interface Jupyter classique avec la commande :
+Installez certaines extensions pour Jupyter Lab avec la commande :
+```
+$ bash binder/postBuild
+```
 
+Enfin, lancez Jupyter. Soit l'inteface classique :
 ```
 $ jupyter notebook
 ```
 
+soit l'interface Jupyter Lab, plus récente et plus évoluée (recommandée) :
+```
+$ jupyter lab
+```
 
-## Créer un notebook
+Ces deux commandes lancent un mini-serveur web sur votre machine et ouvre normalement votre navigateur sur l'interface Jupyter choisie.
 
-Créez votre propre notebook pour votre projet.
+Pour arrêter Jupyter, pressez **deux** fois de suites les touches <kbd>Ctrl</kbd>+<kbd>C</kbd> dans le terminal depuis lequel vous avez lancé Jupyter.
 
-Enregistrez-le dans un dépôt git puis visualisez-le depuis GitHub (en statique).
-
-Si vous avez le temps, essayez avec Binder (utilisez l'exemple du cours).
+Remarque : fermer l'onglet de votre navigateur n'arrête pas le mini-serveur Jupyter.
 
 
+# Exercices
+
+Les notebooks Jupyter se trouvent dans le répertoire `notebooks`.
+
+Ouvrez dans l'ordre les notebooks en double-cliquant sur leur nom. 
+
+- `intro.ipynb`
+- `markdown.ipynb`
+- `matplotlib.ipynb`
+- `demo-R.ipynb`
+- `ipywidgets.ipynb`
+  
+Suivez les instructions dans chaque notebook.
 
 
+# Jupyter en ligne
+
+Si Jupyter n'est pas installé localement sur votre machine, vous pouvez utiliser une version en ligne. Cette version peut prendre quelques minutes à charger, soyez patients et profitez-en pour vous préparer un thé en attendant.
+
+Interface classique :
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master)
+
+Interface Jupyter Lab (recommandée) :
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master?urlpath=lab)
+
+Les notebooks sont directement accessibles dans le répertoire `notebooks`.
