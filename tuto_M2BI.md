@@ -40,6 +40,19 @@ $ jupyter lab
 
 Ces deux commandes lancent un mini-serveur web sur votre machine et ouvre normalement votre navigateur sur l'interface Jupyter choisie.
 
+
+### Cas de Windows Subsystem for Linux (WSL) dans Windows
+
+Si vous utilisez WSL dans Windows, l'interface Jupyter n'apparaitra pas dans le navigateur. Par contre, dans le terminal depuis lequel vous avez lancé Jupyer, vous trouverez deux lignes qui ressemblent à :
+```
+http://localhost:8888/?token=cd78adf4af2c800a16cc958e2303bc4c97c1194d86ebde04
+http://127.0.0.1:8888/?token=cd78adf4af2c800a16cc958e2303bc4c97c1194d86ebde04
+```
+Copiez une de ces lignes et collez-la dans votre navigateur. L'interface Jupyter devrait alors apparaître.
+
+
+### Stopper Jupyter
+
 Pour arrêter Jupyter, pressez **deux** fois de suites les touches <kbd>Ctrl</kbd>+<kbd>C</kbd> dans le terminal depuis lequel vous avez lancé Jupyter.
 
 Remarque : fermer l'onglet de votre navigateur n'arrête pas le mini-serveur Jupyter.
@@ -54,8 +67,6 @@ Ouvrez dans l'ordre les notebooks en double-cliquant sur leur nom.
 - `intro.ipynb`
 - `markdown.ipynb`
 - `matplotlib.ipynb`
-- `demo-R.ipynb`
-- `ipywidgets.ipynb`
   
 Suivez les instructions dans chaque notebook.
 
