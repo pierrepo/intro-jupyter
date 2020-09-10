@@ -28,11 +28,6 @@ Activez le nouvel environnement :
 $ conda activate jupyter-demo
 ```
 
-Installez certaines extensions pour Jupyter Lab avec la commande :
-```
-$ bash binder/postBuild
-```
-
 Enfin, lancez Jupyter. Soit l'interface classique :
 ```
 $ jupyter notebook
