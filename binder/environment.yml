@@ -11,4 +11,5 @@ dependencies:
     - jupyterlab
     - ipywidgets
     - r-irkernel
+    - r-base>=3.6
     - nodejs
