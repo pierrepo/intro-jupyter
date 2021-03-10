@@ -4,89 +4,32 @@ author: Pierre Poulain
 license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 ---
 
-Tutoriel DUBii
+# Tutoriel DUBii
 
-# Préparation de l'environnement local
+Ouvrez une session sur le Jupyter Hub de l'IFB.
 
-Sur vos machines locales (= **pas sur le cluster**), chargez l'environnement conda qui contient Jupyter :
+Ouvrez un terminal depuis le Jupyter Lab et lancez la commande suivante :
 ```
-$ conda activate pfuchs-dubii-2020
-```
-Rappel : le caractère `$` en début de ligne représente l'invite de commande. Il n'est pas à taper.
-
-Vérifiez que Jupyter est bien installé avec la commande
-```
-$ jupyter lab --version
+git clone https://github.com/pierrepo/intro-jupyter
 ```
 
-Vous devriez obtenir `2.0.0` ou une valeur supérieure.
+Vous trouverez les notebooks d'exercice dans le répertoire `intro-jupyter/notebooks`.
 
-Créez dans votre répertoire personnel le répertoire `dubii/python/jupyter` :
-```
-$ mkdir -p ~/dubii/python/jupyter
-```
-Rappel : l'option `-p` de la commande `mkdir` permet de créer un répertoire sans que la commande ne plante si le répertoire existe déjà. Elle permet aussi (et surtout) de créer une succession de répertoires imbriqués (ici le répertoire `jupyter` dans le répertoire `python` dans le répertoire `dubii`).
+## Exercice 1 : `intro.ipynb`
 
-Dirigez-vous ensuite dans ce répertoire :
-```
-$ cd ~/dubii/python/jupyter
-```
-
-Puis, lancez Jupyter. Soit l'interface classique :
-```
-$ jupyter notebook
-```
-
-soit l'interface Jupyter Lab, plus récente et plus évoluée :
-```
-$ jupyter lab
-```
-
-Ces deux commandes lancent un mini-serveur web sur votre machine et ouvre normalement votre navigateur sur l'interface Jupyter choisie.
-
-Pour arrêter Jupyter, pressez **deux** fois de suites les touches <kbd>Ctrl</kbd>+<kbd>C</kbd> dans le terminal depuis lequel vous avez lancé Jupyter.
-
-Remarque : fermer l'onglet de votre navigateur n'arrête pas le mini-serveur Jupyter.
-
-
-
-# Exercices 
-
-## Exercice 1 : intro
-
-Suivez les instructions de la section précédentes pour préparer votre environnement (répertoire + conda).
-
-Dans le répertoire `~/dubii/python/jupyter`, téléchargez ensuite le notebook d'intro :
-```
-$ curl https://raw.githubusercontent.com/pierrepo/intro-jupyter-dubii/master/notebooks/intro.ipynb -o intro.ipynb
-```
-
-Lancez Jupyter puis ouvrez le notebook `intro.ipynb` en double-cliquant sur son nom. 
+Ouvrez le notebook `intro.ipynb` en double-cliquant sur son nom.
 
 Suivez ensuite les instructions dans le notebook.
 
 
-## Exercice 2 : markdown
-
-Toujours dans le répertoire `~/dubii/python/jupyter`, téléchargez le notebook `markdown.ipynb` et l'image `logo.png` :
-
-```
-$ curl https://raw.githubusercontent.com/pierrepo/intro-jupyter-dubii/master/notebooks/markdown.ipynb -o markdown.ipynb
-$ curl https://raw.githubusercontent.com/pierrepo/intro-jupyter-dubii/master/notebooks/logo.png -o logo.png
-```
+## Exercice 2 : `markdown.ipynb`
 
 Ouvrez le notebook `markdown.ipynb` dans Jupyter en double-cliquant sur son nom. 
 
 Suivez ensuite les instructions dans le notebook.
 
 
-## Exercice 3 : matplotlib
-
-Toujours dans le répertoire `~/dubii/python/jupyter`, téléchargez le notebook `matplotlib.ipynb` :
-
-```
-$ curl https://raw.githubusercontent.com/pierrepo/intro-jupyter-dubii/master/notebooks/matplotlib.ipynb -o matplotlib.ipynb
-```
+## Exercice 3 : `matplotlib.ipynb`
 
 Ouvrez le notebook `matplotlib.ipynb` dans Jupyter en double-cliquant sur son nom. 
 
