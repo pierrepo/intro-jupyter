@@ -35,17 +35,3 @@ Ouvrez le notebook `matplotlib.ipynb` dans Jupyter en double-cliquant sur son no
 
 Suivez ensuite les instructions dans le notebook.
 
-
-# Jupyter en ligne
-
-Si Jupyter n'est pas installé localement sur votre machine, vous pouvez utiliser une version en ligne. Cette version peut prendre quelques minutes à charger, soyez patients et profitez-en pour vous préparer un thé en attendant.
-
-Interface classique :
-
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master)
-
-Interface Jupyter Lab (recommandée) :
-
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master?urlpath=lab)
-
-Les notebooks sont directement accessibles dans le répertoire `notebooks`.
