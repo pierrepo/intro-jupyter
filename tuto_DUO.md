@@ -52,6 +52,8 @@ Pour la suite, vous trouverez les notebooks d'exercice dans le répertoire `intr
 
 Ouvrez le notebook `intro_R.ipynb` en double-cliquant sur son nom.
 
+Sélectionnez ci-besoin un kernel R >= 4.
+
 Suivez ensuite les instructions dans le notebook.
 
 
@@ -64,7 +66,7 @@ Suivez ensuite les instructions dans le notebook.
 
 ## Exercice 3 : DESeq2
 
-Créez un nouveau notebook Jupyter avec un **noyau R**.
+Créez un nouveau notebook Jupyter avec un **noyau R** (>= 4).
 
 Renommez ce nouveau notebook `analyse_DESeq2.ipynb`.
 
