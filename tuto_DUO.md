@@ -48,23 +48,29 @@ Vérifiez aussi graphiquement, en utilisant l'explorateur de fichiers à gauche,
 Pour la suite, vous trouverez les notebooks d'exercice dans le répertoire `intro-jupyter/notebooks`.
 
 
-## Exercice 1 : `intro_R.ipynb`
+## 4. Exercice 1 : premier notebook
 
 Ouvrez le notebook `intro_R.ipynb` en double-cliquant sur son nom.
 
 Suivez ensuite les instructions dans le notebook.
 
 
-## Exercice 2 : `markdown.ipynb`
+## Exercice 2 : Markdown
 
 Ouvrez le notebook `markdown.ipynb` dans Jupyter en double-cliquant sur son nom. 
 
 Suivez ensuite les instructions dans le notebook.
 
 
-## Exercice 3 : `matplotlib.ipynb`
+## Exercice 3 : DESeq2
 
-Ouvrez le notebook `matplotlib.ipynb` dans Jupyter en double-cliquant sur son nom. 
+Créez un nouveau notebook Jupyter avec un **noyau R**.
 
-Suivez ensuite les instructions dans le notebook.
+Renommez ce nouveau notebook `analyse_DESeq2.ipynb`.
+
+Téléchargez le script R `Utilisation_DESeq2.R` dans votre espace de travail sur le Jupyter Lab en cliquant sur l'icone ⬆️ *Upload Files* (à gauche, au dessus de l'explorateur de fichiers).
+
+Transformez ce script en notebook Jupyter en reportant les commandes R dans des cellules de code. Utilisez des cellules Markdown pour ajouter les commentaires sur les code et refléter la structure du script unitial.
+
+
 
