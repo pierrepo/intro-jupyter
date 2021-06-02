@@ -9,13 +9,13 @@ license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 ## 1. Connection 
 Ouvrez une session sur le Jupyter Hub de l'IFB. Pour cela :
 
-- Ouvrez une page de votre navigateur web à l'adresse https://jupyterhub.cluster.france-bioinformatique.fr/
-- Idendifiez-vous avec votre login et mot-de-passe IFB.
-- Sur la page *Server Options*, choississez un profile *Small (1 cpu, 1GB RAM, 12h)*. Votre instance Jupyter disposera donc d'un processeur et de 1 Go de RAM, et ce sera active 12 h (après ce laps de temps, elle sera détruite).
+- Ouvrez une page de votre navigateur web à l'adresse <https://jupyterhub.cluster.france-bioinformatique.fr/>
+- Idendifiez-vous avec votre login et mot de passe IFB.
+- Sur la page *Server Options*, choississez un profile *Small (1 cpu, 1GB RAM, 12h)*. Votre instance Jupyter disposera donc d'un processeur et de 1 Go de RAM, et sera active 12 h (après ce laps de temps, elle sera détruite).
 - Patientez quelques instants le temps que votre serveur Jupyter s'initialise.
 - L'interface que vous avez en face de vous s'appelle Jupyter Lab.
 
-## 2. Orientation et préparation des données
+## 2. Orientation
 
 Vous trouverez sur la gauche un explorateur de fichier qui vous permet de naviguer graphiquement 🥳 dans l'arborescence du serveur.
 
@@ -30,7 +30,7 @@ En bas de la page, dans la rubrique *Other*, cliquez sur l'icône *Terminal* qui
 
 ## 3. Préparation des données
 
-Depuis un terminal lancé dans le Jupyter Lab, déplacez vous dans votre répertoire de travail avec la commande :
+Depuis un terminal lancé dans le Jupyter Lab, déplacez-vous dans votre répertoire de travail avec la commande :
 ```bash
 cd /shared/projects/uparis_duo_2020/USERNAME
 ```
@@ -57,22 +57,24 @@ Sélectionnez ci-besoin un kernel R >= 4.
 Suivez ensuite les instructions dans le notebook.
 
 
-## Exercice 2 : Markdown
+## 5. Exercice 2 : Markdown
 
 Ouvrez le notebook `markdown.ipynb` dans Jupyter en double-cliquant sur son nom. 
 
 Suivez ensuite les instructions dans le notebook.
 
 
-## Exercice 3 : DESeq2
+## 6. Exercice 3 : DESeq2
 
 Créez un nouveau notebook Jupyter avec un **noyau R** (>= 4).
 
 Renommez ce nouveau notebook `analyse_DESeq2.ipynb`.
 
-Téléchargez le script R `Utilisation_DESeq2.R` dans votre espace de travail sur le Jupyter Lab en cliquant sur l'icone ⬆️ *Upload Files* (à gauche, au dessus de l'explorateur de fichiers).
+Transférez le script R `Utilisation_DESeq2.R` depuis votre machine locale vers votre espace de travail sur le Jupyter Lab en cliquant sur l'icone ⬆️ *Upload Files* (à gauche, au dessus de l'explorateur de fichiers).
 
-Transformez ce script en notebook Jupyter en reportant les commandes R dans des cellules de code. Utilisez des cellules Markdown pour ajouter les commentaires sur les code et refléter la structure du script unitial.
+Transformez ce script en notebook Jupyter en reportant les commandes R dans des cellules de code. Utilisez des cellules Markdown pour ajouter des commentaires sur les cellules de code et refléter la structure du script initial.
+
+N'oubliez pas d'exécuter notre notebook pour vérifier que celui fonctionne correctement.
 
 
 
