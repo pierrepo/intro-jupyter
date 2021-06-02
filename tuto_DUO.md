@@ -76,5 +76,5 @@ Transformez ce script en notebook Jupyter en reportant les commandes R dans des 
 
 N'oubliez pas d'exécuter notre notebook pour vérifier que celui fonctionne correctement.
 
-
+Enfin, exportez votre notebook au format HTML. Consultez pour cela les instructions à la fin du notebook `intro_R.ipynb`.
 
