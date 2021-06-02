@@ -9,8 +9,8 @@ license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 Ouvrez une session sur le Jupyter Hub de l'IFB.
 
 Ouvrez un terminal depuis le Jupyter Lab et lancez la commande suivante :
-```
-git clone https://github.com/pierrepo/intro-jupyter
+```bash
+$ git clone https://github.com/pierrepo/intro-jupyter
 ```
 
 Vous trouverez les notebooks d'exercice dans le répertoire `intro-jupyter/notebooks`.
