@@ -7,10 +7,16 @@ channels:
     - bioconda
     - conda-forge
 dependencies:
-    - python=3.7
+    - python=3.8
+    - pip
     - numpy
     - pandas
     - matplotlib
-    - jupyterlab>=2
+    - jupyterlab>=3
     - ipywidgets
     - nodejs
+    - r-irkernel
+    - r-base>=4.0
+    - r-tidyverse
+    - pip:
+        - bash_kernel
