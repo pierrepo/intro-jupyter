@@ -15,21 +15,21 @@ git clone https://github.com/pierrepo/intro-jupyter
 
 Vous trouverez les notebooks d'exercice dans le répertoire `intro-jupyter/notebooks`.
 
-## Exercice 1 : `intro.ipynb`
+## Exercice 1 : introduction avec Python
 
-Ouvrez le notebook `intro.ipynb` en double-cliquant sur son nom.
+Ouvrez le notebook `intro_Python.ipynb` en double-cliquant sur son nom.
 
 Suivez ensuite les instructions dans le notebook.
 
 
-## Exercice 2 : `markdown.ipynb`
+## Exercice 2 : Markdown
 
 Ouvrez le notebook `markdown.ipynb` dans Jupyter en double-cliquant sur son nom. 
 
 Suivez ensuite les instructions dans le notebook.
 
 
-## Exercice 3 : `matplotlib.ipynb`
+## Exercice 3 : Matplotlib
 
 Ouvrez le notebook `matplotlib.ipynb` dans Jupyter en double-cliquant sur son nom. 
 

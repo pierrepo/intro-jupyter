@@ -28,12 +28,7 @@ Activez le nouvel environnement :
 $ conda activate jupyter-demo
 ```
 
-Enfin, lancez Jupyter. Soit l'interface classique :
-```
-$ jupyter notebook
-```
-
-soit l'interface Jupyter Lab, plus récente et plus évoluée (recommandée) :
+Enfin, lancez Jupyter Lab :
 ```
 $ jupyter lab
 ```
@@ -64,7 +59,7 @@ Les notebooks Jupyter se trouvent dans le répertoire `notebooks`.
 
 Ouvrez dans l'ordre les notebooks en double-cliquant sur leur nom. 
 
-- `intro.ipynb`
+- `intro_Python.ipynb`
 - `markdown.ipynb`
 - `matplotlib.ipynb`
   
@@ -74,12 +69,6 @@ Suivez les instructions dans chaque notebook.
 # Jupyter en ligne
 
 Si Jupyter n'est pas installé localement sur votre machine, vous pouvez utiliser une version en ligne. Cette version peut prendre quelques minutes à charger, soyez patients et profitez-en pour vous préparer un thé en attendant.
-
-Interface classique :
-
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master)
-
-Interface Jupyter Lab (recommandée) :
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master?urlpath=lab)
 
