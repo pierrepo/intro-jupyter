@@ -32,13 +32,13 @@ En bas de la page, dans la rubrique *Other*, cliquez sur l'icône *Terminal* qui
 
 Depuis un terminal lancé dans le Jupyter Lab, déplacez-vous dans votre répertoire de travail avec la commande :
 ```bash
-cd /shared/projects/uparis_duo_2020/USERNAME
+$ cd /shared/projects/uparis_duo_2020/USERNAME
 ```
 où `USERNAME` est votre nom d'utilisateur.
 
 Exécutez ensuite la commande suivante : 
-```
-git clone https://github.com/pierrepo/intro-jupyter
+```bash
+$ git clone https://github.com/pierrepo/intro-jupyter
 ```
 
 Vérifiez en ligne de commande, dans votre terminal, que le répertoire `intro-jupyter` a bien été créé.

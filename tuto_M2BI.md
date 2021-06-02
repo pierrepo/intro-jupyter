@@ -9,27 +9,27 @@ Tutoriel M2 BI
 # Préparation de l'environnement local
 
 Dans un environnement Unix, clonez ce dépôt GitHub :
-```
+```bash
 $ git clone https://github.com/pierrepo/intro-jupyter.git
 ```
 
 Entrez dans le répertoire `intro-jupyter` ainsi créé :
-```
+```bash
 $ cd intro-jupyter
 ```
 
 Créez ensuite l'environnement nécessaire avec conda :
-```
+```bash
 $ conda env create -f binder/environment.yml
 ```
 
 Activez le nouvel environnement :
-```
+```bash
 $ conda activate jupyter-demo
 ```
 
 Enfin, lancez Jupyter Lab :
-```
+```bash
 $ jupyter lab
 ```
 
