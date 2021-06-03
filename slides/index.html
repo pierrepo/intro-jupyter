@@ -354,17 +354,17 @@ article : <a href="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f03
 ## Installation
 
 Depuis un environnement conda :
-```
+```bash
 $ conda install -c conda-forge jupyterlab
 ```
 
 Lancement :
-```
+```bash
 $ jupyter lab
 ```
 
 Pour l'interface « classique » : 
-```
+```bash
 $ jupyter notebook
 ```
 
@@ -401,18 +401,67 @@ Notebook `intro_Python.ipynb` / `intro_R.ipynb`
 - Langage de balises *simple*
 - Utilisé pour la partie « littérature » des notebooks
 
-<br />
-<br />
-<br />
+---
+
+<!-- .slide: style="text-align:left;font-size:2rem;"-->
+
+## Markdown : exemples
+
+#### Google Docs, Microsoft Word, OpenOffice Writter (WYSIWYG)
+
+Hello my name is **Pierre**.<br />
+Git is *fun* and [GitHub](https://github.com/) even more!
 
 <div class="fragment">
 
+#### LaTeX
+```tex
+Hello my name is \textbf{Pierre}. 
+Git is \textit{fun} and \href{https://github.com/}{GitHub} even more!
+```
+
+</div>
+
+<div class="fragment">
+
+#### HTML
+```html
+Hello my name is <b>Pierre</b>. 
+Git is <i>fun</i> and <a href=”https://github.com/”>GitHub</a> even more!
+```
+	
+</div>
+
+<div class="fragment">
+
+#### Markdown
+```
+Hello my name is **Pierre**. 
+Git is *fun* and [GitHub](https://github.com/) even more.
+```
+		
+</div>
+
+---
+
+<!-- .slide: style="text-align:left; "-->
+
+## Markdown
+
 Références : 
 
-- https://fr.wikipedia.org/wiki/Markdown
+- https://www.markdownguide.org/basic-syntax/
+- https://www.markdownguide.org/extended-syntax/ 
 - https://guides.github.com/features/mastering-markdown/
 - [Markdown Syntax cheat sheet](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 - [The Ultimate Markdown Guide (for Jupyter Notebook)](https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd)
+
+<div class="fragment">
+
+Utilisation hors notebook :
+- Éditeur collaboratif en Markdown : [HedgeDoc](https://demo.hedgedoc.org/)
+- Fichier [README.md](https://github.com/pierrepo/autoclasswrapper) sur GitHub
+- Ce [cours](https://github.com/pierrepo/intro-jupyter/) 🤪
 
 </div>
 
@@ -476,16 +525,16 @@ Notebooks Jupyter :
 
 On dit ce qu'on fait, pourquoi on le fait et ce qu'on obtient.
 
-On [accompagne](https://github.com/pierrepo/autoclasswrapper), on explique des résultats ou des analyses.
+On [accompagne](https://github.com/pierrepo/autoclasswrapper), on [explique](https://github.com/pierrepo/python-omics-use-cases) des résultats ou des analyses.
 
 </div>
 
 
 <div class="fragment" style="margin-top: 50px;">
 
-⚠️ Attention :
+⚠️ Attention ⚠️
 
-- On ne développe pas un gros code Python dans un notebook.
+On ne développe pas un gros code Python dans un notebook.
 
 </div>
 
@@ -526,9 +575,13 @@ Dashboarding avec Voila :
 
 ## Pour aller vers plus de reproductibilité
 
+<div style="font-size:1.1rem;">
+
 Using Jupyter for reproducible scientific workflows<br />
 Beg et al., *Computing in Science & Engineering*, 2021.<br />
 DOI [10.1109/MCSE.2021.3052101](https://doi.org/10.1109/MCSE.2021.3052101)
+
+</div>
 
 <img src="assets/img/reproducible_logbook.png"
 	 height="500px" style="margin-top:-20px;">
