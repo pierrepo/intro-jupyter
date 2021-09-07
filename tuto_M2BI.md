@@ -50,9 +50,9 @@ http://127.0.0.1:8888/?token=cd78adf4af2c800a16cc958e2303bc4c97c1194d86ebde04
 Copiez une de ces lignes et collez-la dans votre navigateur. L'interface Jupyter Lab devrait alors apparaître.
 
 
-### Stopper Jupyter
+### Stopper Jupyter Lab
 
-Pour arrêter Jupyter, pressez **deux** fois de suites les touches <kbd>Ctrl</kbd>+<kbd>C</kbd> dans le terminal depuis lequel vous avez lancé Jupyter.
+Pour arrêter Jupyter Lab, pressez **deux** fois de suites les touches <kbd>Ctrl</kbd>+<kbd>C</kbd> dans le terminal depuis lequel vous avez lancé Jupyter.
 
 Remarque : fermer l'onglet de votre navigateur n'arrête pas le mini-serveur Jupyter.
 
