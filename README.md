@@ -8,7 +8,7 @@ Pierre Poulain
 | [Tutoriel DUBii](https://pierrepo.github.io/intro-jupyter/tuto_DUBII)
 
 
-## Demo Jupyter notebooks
+## Demo live de Jupyter Lab
 
 Cliquez sur le bouton ci-dessous pour lancer une démo live de Jupyter Lab :
 
