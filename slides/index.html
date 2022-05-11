@@ -6,23 +6,15 @@
 
 		<title>Jupyter et ses notebooks</title>
 
-		<link rel="stylesheet" href="assets/reveal.js/css/reveal.css">
-		<link rel="stylesheet" href="assets/reveal.js/css/theme/white.css">
+		<link rel="stylesheet" href="assets/reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="assets/reveal.js/dist/theme/white.css">
 
 		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="assets/reveal.js/lib/css/zenburn.css">
+		<link rel="stylesheet" href="assets/reveal.js/plugin/highlight/monokai.css">
 
 		<!-- custom css -->
 		<link rel="stylesheet" href="assets/css/custom.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'assets/reveal.js/css/print/pdf.css' : 'assets/reveal.js/css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
 	</head>
 	<body>
 		<div class="reveal">
@@ -472,7 +464,7 @@ Git is <i>fun</i> and <a href=”https://github.com/”>GitHub</a> even more!
 <div class="fragment">
 
 #### Markdown
-```
+```md
 Hello my name is **Pierre**. 
 Git is *fun* and [GitHub](https://github.com/) even more.
 ```
@@ -669,29 +661,24 @@ Quelques exemples de dépôts GitHub configurés avec Binder :
             </p>
         </footer>
 
-		<script src="assets/reveal.js/lib/js/head.min.js"></script>
-		<script src="assets/reveal.js/js/reveal.js"></script>
 
+		<script src="assets/reveal.js/dist/reveal.js"></script>
+        <script src="assets/reveal.js/plugin/markdown/markdown.js"></script>
+        <script src="assets/reveal.js/plugin/highlight/highlight.js"></script>
+        <script src="assets/reveal.js/plugin/notes/notes.js"></script>
+        <script src="assets/reveal.js/plugin/math/math.js"></script>
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-
-				// Display the page number of the current slide
-				slideNumber: true,
-				// Push each slide change to the browser history
+				controls: true,
+				progress: true,
 				history: true,
-				// Vertical centering of slides
-				center: false,
-				dependencies: [
-					{ src: 'assets/reveal.js/plugin/markdown/marked.js' },
-					{ src: 'assets/reveal.js/plugin/markdown/markdown.js' },
-					{ src: 'assets/reveal.js/plugin/notes/notes.js', async: true },
-					{ src: 'assets/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'assets/reveal.js/plugin/math/math.js', async: true }
-				]
+				center: true,
+
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
 			});
+			Reveal.configure({ pdfMaxPagesPerSlide: 1 });
+			Reveal.configure({ pdfSeparateFragments: false });
 		</script>
+
 	</body>
 </html>
