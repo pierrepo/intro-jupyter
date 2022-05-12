@@ -11,8 +11,8 @@ Ouvrez une session sur le Jupyter Hub de l'IFB. Pour cela :
 
 - Ouvrez une page de votre navigateur web à l'adresse <https://jupyterhub.cluster.france-bioinformatique.fr/>
 - Idendifiez-vous avec votre login et mot de passe IFB.
-- Sur la page *Server Options*, choississez un profil *Small (1 cpu, 1GB RAM, 12h)*. Votre instance Jupyter disposera donc d'un processeur, de 1 Go de RAM, et sera active 12 h (après ce laps de temps, elle sera détruite).
-- Patientez quelques instants le temps que votre serveur Jupyter s'initialise.
+- Sur la page *Server Options*, choississez un profil *Medium (4 cpu, 10GB RAM, 12h)*. Votre instance Jupyter disposera donc de 4 processeurs, de 10 Go de RAM, et sera active 12 h (après ce laps de temps, elle sera détruite).
+- Cliquez sur le bouton *Start* puis patientez quelques instants le temps que votre serveur Jupyter s'initialise.
 - L'interface que vous avez en face de vous s'appelle JupyterLab.
 
 ## 2. Orientation
@@ -73,13 +73,18 @@ Téléchargez depuis Moodle le script R `Utilisation_DESeq2.R` sur votre machine
 
 Transférez ensuite ce script vers votre espace de travail sur JupyterLab en cliquant sur l'icone ⬆️ *Upload Files* (à gauche, au dessus de l'explorateur de fichiers).
 
-Une fois téléchargé dans JupyterLAb, double-cliquez sur le nom de script pour l'ouvrir dans l'éditeur de texte de JupyterLab.
+Une fois téléchargé dans JupyterLab, double-cliquez sur le nom de script pour l'ouvrir dans l'éditeur de texte de JupyterLab.
 
 Transformez ce script en notebook Jupyter en reportant les commandes R dans des cellules de code. Utilisez des cellules Markdown pour ajouter des commentaires sur les cellules de code et refléter la structure du script initial.
 
 N'oubliez pas d'exécuter notre notebook pour vérifier que celui fonctionne correctement.
 
-**Remarque :** le chargement des bibliothèques R avec la commande `library()` peut afficher de nombreux messages sur fond rose. C'est tout à fait normal.
+**Remarques :** 
 
-Enfin, exportez votre notebook au format HTML. Consultez pour cela les instructions à la fin du notebook `intro_R.ipynb`.
+1. Le chargement des bibliothèques R avec la commande `library()` peut afficher de nombreux messages sur fond rose. C'est tout à fait normal.
+1. Certains traitements peuvent prendre du temps, soyez patient.
+
+Exportez ensuite votre notebook au format HTML. Consultez pour cela les instructions à la fin du notebook `intro_R.ipynb`.
+
+Enfin, partagez votre notebook au format .ipynb et .html sur le canal Slack de la promo.
 
