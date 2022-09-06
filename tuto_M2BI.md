@@ -22,7 +22,7 @@ Créez ensuite l'environnement nécessaire avec conda :
 ```bash
 $ conda env create -f binder/environment.yml
 ```
-ou si mamba est installé :
+ou avec mamba si celui-ci est installé :
 ```bash
 $ mamba env create -f binder/environment.yml
 ```
