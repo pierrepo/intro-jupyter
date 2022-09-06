@@ -68,7 +68,7 @@ Ouvrez dans l'ordre les notebooks en double-cliquant sur leur nom.
 - `markdown.ipynb`
 - `matplotlib.ipynb`
   
-Suivez les instructions dans chaque notebook.
+Suivez les instructions indiquées dans chaque notebook.
 
 
 # Jupyter en ligne
