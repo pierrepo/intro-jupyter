@@ -34,10 +34,10 @@ $ conda activate jupyter-demo
 
 Enfin, lancez Jupyter Lab :
 ```bash
-$ jupyter lab
+$ jupyter-lab
 ```
 
-Ces deux commandes lancent un mini-serveur web sur votre machine et ouvre normalement votre navigateur sur l'interface Jupyter Lab.
+Cette commande lance un mini-serveur web sur votre machine et ouvre normalement votre navigateur sur l'interface Jupyter Lab.
 
 
 ### Cas de Windows Subsystem for Linux (WSL) dans Windows
