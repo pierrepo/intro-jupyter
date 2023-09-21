@@ -11,19 +11,25 @@ Ouvrez une session sur le Jupyter Hub de l'IFB. Pour cela :
 
 - Ouvrez une page de votre navigateur web à l'adresse <https://jupyterhub.cluster.france-bioinformatique.fr/>
 - Idendifiez-vous avec votre login et mot de passe IFB.
-- Sur la page *Server Options*, choississez un profil *Medium (4 cpu, 10GB RAM, 12h)*. Votre instance Jupyter disposera donc de 4 processeurs, de 10 Go de RAM, et sera active 12 h (après ce laps de temps, elle sera détruite).
+- Sur la page *Server Options*, choississez :
+    + Reservation: No reservation
+    + Account: **202304_duo**
+    + Partition: fast
+    + CPU(s): 4
+    + Memory (in GB): 10
+    + GPU(s): 0
+    Votre instance Jupyter disposera donc de 4 processeurs, de 10 Go de RAM, et sera active 12 h (après ce laps de temps, elle sera détruite).
 - Cliquez sur le bouton *Start* puis patientez quelques instants le temps que votre serveur Jupyter s'initialise.
-- L'interface que vous avez en face de vous s'appelle JupyterLab.
+
 
 ## 2. Orientation
 
-Vous trouverez sur la gauche un explorateur de fichier qui vous permet de naviguer graphiquement 🥳 dans l'arborescence du serveur.
+Vous êtes déjà familiers de l'interface JupyterLab, mais voici quelques rappels :
 
-Votre répertoire utilisateur se trouve dans `/shared/home/USERNAME` où `USERNAME` est votre nom d'utilisateur.
-
-Votre répertoire de projet se trouve dans `/shared/projects/form_2021_29/USERNAME` où `USERNAME` est votre nom d'utilisateur. Je vous rappelle que c'est dans ce répertoire que vous devez travailler.
-
-Dans la partie droite de votre navigateur, vous avez le *Launcher* qui, comment son nom l'indique, permet de *lancer* (créer) des notebooks Jupyter (Python, Bash ou R), RStudio, un terminal et plein d'autres choses.
+- Vous trouverez sur la gauche un explorateur de fichier qui vous permet de naviguer graphiquement dans l'arborescence du serveur.
+    + Votre répertoire utilisateur se trouve dans `/shared/home/USERNAME` où `USERNAME` est votre nom d'utilisateur.
+    + Votre répertoire de projet se trouve dans `/shared/projects/202304_duo/USERNAME` où `USERNAME` est votre nom d'utilisateur. Je vous rappelle que c'est **dans ce répertoire** que vous devez travailler.
+- Sur la partie droite de l'inteface JupyterLab, vous avez le *Launcher* qui, comment son nom l'indique, permet de *lancer* (créer) des notebooks Jupyter dans plusieurs langages (Python, Bash ou R), RStudio, un terminal et plein d'autres choses.
 
 En bas de la page, dans la rubrique *Other*, cliquez sur l'icône *Terminal* qui va lancer un terminal Unix dans JupyterLab.
 
@@ -31,11 +37,13 @@ En bas de la page, dans la rubrique *Other*, cliquez sur l'icône *Terminal* qui
 ## 3. Préparation des données
 
 Depuis un terminal lancé dans JupyterLab, déplacez-vous dans votre répertoire de travail avec la commande :
+
 ```bash
-$ cd /shared/projects/form_2021_29/$USER
+$ cd /shared/projects/202304_duo/$USER
 ```
 
-Exécutez ensuite la commande suivante : 
+Exécutez ensuite la commande suivante :
+
 ```bash
 $ git clone https://github.com/pierrepo/intro-jupyter
 ```
@@ -65,7 +73,10 @@ Suivez ensuite les instructions dans le notebook.
 
 ## 6. Exercice 3 : DESeq2
 
-Créez un nouveau notebook Jupyter avec un **noyau R** (>= 4).
+Créez un nouveau notebook Jupyter avec un **noyau R** (>= 4). Pour cela :
+
+- Cliquez sur le gros bouton bleu "+" en haut à gauche de l'interface JupyterLab.
+- Dans la section *Notebook*, cliquez sur l'icone *R* (normalement R 4.0.3).
 
 Renommez ce nouveau notebook `analyse_DESeq2.ipynb` (clic droit sur le nom du notebook puis *Rename Notebook...*).
 
@@ -73,11 +84,11 @@ Téléchargez depuis Moodle le script R `Utilisation_DESeq2.R` sur votre machine
 
 Transférez ensuite ce script vers votre espace de travail sur JupyterLab en cliquant sur l'icone ⬆️ *Upload Files* (à gauche, au dessus de l'explorateur de fichiers).
 
-Une fois téléchargé dans JupyterLab, double-cliquez sur le nom de script pour l'ouvrir dans l'éditeur de texte de JupyterLab.
+Une fois téléchargé dans JupyterLab, double-cliquez sur le nom du script pour l'ouvrir dans l'éditeur de texte de JupyterLab.
 
-Transformez ce script en notebook Jupyter en reportant les commandes R dans des cellules de code. Utilisez des cellules Markdown pour ajouter des commentaires sur les cellules de code et refléter la structure du script initial.
+Transformez ce script en notebook Jupyter en reportant les commandes R dans des cellules de code. Utilisez des cellules Markdown pour ajouter des commentaires sur les cellules de code et refléter la structure du script initial. Dans la barre d'outils au dessus du notebook, un menu permet de changer le type de cellule (Code ou Markdown).
 
-N'oubliez pas d'exécuter notre notebook pour vérifier que celui fonctionne correctement.
+N'oubliez pas d'exécuter votre notebook pour vérifier que celui fonctionne correctement.
 
 **Remarques :** 
 
