@@ -18,6 +18,7 @@ Ouvrez une session sur le Jupyter Hub de l'IFB. Pour cela :
     + CPU(s): 4
     + Memory (in GB): 10
     + GPU(s): 0
+    
     Votre instance Jupyter disposera donc de 4 processeurs, de 10 Go de RAM, et sera active 12 h (après ce laps de temps, elle sera détruite).
 - Cliquez sur le bouton *Start* puis patientez quelques instants le temps que votre serveur Jupyter s'initialise.
 
