@@ -18,7 +18,7 @@ Ouvrez une session sur le Jupyter Hub de l'IFB. Pour cela :
     + CPU(s): 4
     + Memory (in GB): 10
     + GPU(s): 0
-    
+
     Votre instance Jupyter disposera donc de 4 processeurs, de 10 Go de RAM, et sera active 12 h (après ce laps de temps, elle sera détruite).
 - Cliquez sur le bouton *Start* puis patientez quelques instants le temps que votre serveur Jupyter s'initialise.
 
@@ -60,7 +60,7 @@ Pour la suite, vous trouverez les notebooks d'exercice dans le répertoire `intr
 
 Ouvrez le notebook `intro_R.ipynb` en double-cliquant sur son nom depuis l'explorateur de fichiers (à gauche).
 
-Si on vous le demande, sélectionnez ci-besoin un kernel R >= 4.
+Si on vous le demande, sélectionnez si besoin un kernel R >= 4.
 
 Suivez ensuite les instructions dans le notebook.
 
@@ -96,7 +96,9 @@ N'oubliez pas d'exécuter votre notebook pour vérifier que celui fonctionne cor
 1. Le chargement des bibliothèques R avec la commande `library()` peut afficher de nombreux messages sur fond rose. C'est tout à fait normal.
 1. Certains traitements peuvent prendre du temps, soyez patient.
 
+À la fin de votre notebook, affichez la liste des bibliothèques utilisées avec leurs versions.
+
 Exportez ensuite votre notebook au format HTML. Consultez pour cela les instructions à la fin du notebook `intro_R.ipynb`.
 
-Enfin, partagez votre notebook au format .ipynb et .html sur le canal Slack de la promo.
+Enfin, partagez votre notebook au format .html sur le canal Slack de la promo.
 
