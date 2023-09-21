@@ -18,5 +18,9 @@ dependencies:
     - r-irkernel
     - r-base>=4.0
     - r-tidyverse
+    # For DUO example with DESeq2
+    - bioconductor-deseq2
+    - bioconductor-parathyroidse
     - pip:
         - bash_kernel
+        - watermark
