@@ -6,7 +6,8 @@ license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 
 # Tutoriel DUO
 
-## 1. Connection 
+## 1. Connexion
+ 
 Ouvrez une session sur le Jupyter Hub de l'IFB. Pour cela :
 
 - Ouvrez une page de votre navigateur web à l'adresse <https://jupyterhub.cluster.france-bioinformatique.fr/>
