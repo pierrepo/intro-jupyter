@@ -9,30 +9,31 @@ Tutoriel M2 BI
 # Préparation de l'environnement local
 
 Dans un environnement Unix, clonez ce dépôt GitHub :
+
 ```bash
 $ git clone https://github.com/pierrepo/intro-jupyter.git
 ```
 
 Entrez dans le répertoire `intro-jupyter` ainsi créé :
+
 ```bash
 $ cd intro-jupyter
 ```
 
 Créez ensuite l'environnement nécessaire avec conda :
+
 ```bash
 $ conda env create -f binder/environment.yml
 ```
-ou avec mamba si celui-ci est installé :
-```bash
-$ mamba env create -f binder/environment.yml
-```
 
-Activez le nouvel environnement :
+Activez ce nouvel environnement :
+
 ```bash
 $ conda activate jupyter-demo
 ```
 
 Enfin, lancez Jupyter Lab :
+
 ```bash
 $ jupyter-lab
 ```
@@ -43,10 +44,12 @@ Cette commande lance un mini-serveur web sur votre machine et ouvre normalement 
 ### Cas de Windows Subsystem for Linux (WSL) dans Windows
 
 Si vous utilisez WSL dans Windows, l'interface Jupyter n'apparaitra pas dans le navigateur. Par contre, dans le terminal depuis lequel vous avez lancé Jupyter, vous trouverez deux lignes qui ressemblent à :
+
 ```
 http://localhost:8888/?token=cd78adf4af2c800a16cc958e2303bc4c97c1194d86ebde04
 http://127.0.0.1:8888/?token=cd78adf4af2c800a16cc958e2303bc4c97c1194d86ebde04
 ```
+
 Copiez une de ces lignes et collez-la dans votre navigateur. L'interface Jupyter Lab devrait alors apparaître.
 
 
