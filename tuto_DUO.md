@@ -31,7 +31,7 @@ Vous êtes déjà familiers de l'interface JupyterLab, mais voici quelques rappe
 - Vous trouverez sur la gauche un explorateur de fichier qui vous permet de naviguer graphiquement dans l'arborescence du serveur.
     + Votre répertoire utilisateur se trouve dans `/shared/home/USERNAME` où `USERNAME` est votre nom d'utilisateur.
     + Votre répertoire de projet se trouve dans `/shared/projects/202304_duo/USERNAME` où `USERNAME` est votre nom d'utilisateur. Je vous rappelle que c'est **dans ce répertoire** que vous devez travailler.
-- Sur la partie droite de l'inteface JupyterLab, vous avez le *Launcher* qui, comment son nom l'indique, permet de *lancer* (créer) des notebooks Jupyter dans plusieurs langages (Python, Bash ou R), RStudio, un terminal et plein d'autres choses.
+- Sur la partie droite de l'interface JupyterLab, vous avez le *Launcher* qui, comment son nom l'indique, permet de *lancer* (créer) des notebooks Jupyter dans plusieurs langages (Python, Bash ou R), RStudio, un terminal et plein d'autres choses.
 
 En bas de la page, dans la rubrique *Other*, cliquez sur l'icône *Terminal* qui va lancer un terminal Unix dans JupyterLab.
 
@@ -78,19 +78,19 @@ Suivez ensuite les instructions dans le notebook.
 Créez un nouveau notebook Jupyter avec un **noyau R** (>= 4). Pour cela :
 
 - Cliquez sur le gros bouton bleu "+" en haut à gauche de l'interface JupyterLab.
-- Dans la section *Notebook*, cliquez sur l'icone *R* (normalement R 4.0.3).
+- Dans la section *Notebook*, cliquez sur l'icône *R* (normalement R 4.0.3).
 
 Renommez ce nouveau notebook `analyse_DESeq2.ipynb` (clic droit sur le nom du notebook puis *Rename Notebook...*).
 
 Téléchargez depuis Moodle le script R `Utilisation_DESeq2.R` sur votre machine locale.
 
-Transférez ensuite ce script vers votre espace de travail sur JupyterLab en cliquant sur l'icone ⬆️ *Upload Files* (à gauche, au dessus de l'explorateur de fichiers).
+Transférez ensuite ce script vers votre espace de travail sur JupyterLab en cliquant sur l'icône ⬆️ *Upload Files* (à gauche, au-dessus de l'explorateur de fichiers).
 
 Une fois téléchargé dans JupyterLab, double-cliquez sur le nom du script pour l'ouvrir dans l'éditeur de texte de JupyterLab.
 
-Transformez ce script en notebook Jupyter en reportant les commandes R dans des cellules de code. Utilisez des cellules Markdown pour ajouter des commentaires sur les cellules de code et refléter la structure du script initial. Dans la barre d'outils au dessus du notebook, un menu permet de changer le type de cellule (Code ou Markdown).
+Transformez ce script en notebook Jupyter en reportant les commandes R dans des cellules de code. Utilisez des cellules Markdown pour ajouter des commentaires sur les cellules de code et refléter la structure du script initial. Dans la barre d'outils au-dessus du notebook, un menu permet de changer le type de cellule (Code ou Markdown).
 
-N'oubliez pas d'exécuter votre notebook pour vérifier que celui fonctionne correctement.
+N'oubliez pas d'exécuter votre notebook pour vérifier que celui-ci fonctionne correctement.
 
 **Remarques :** 
 
