@@ -1,26 +1,22 @@
 name: jupyter-demo
-# channels priority
-# see https://bioconda.github.io/
-# conda-forge has highest priority
 channels:
-    - defaults
-    - bioconda
     - conda-forge
+    - bioconda
+    - nodefaults
 dependencies:
-    - python=3.11
+    - python
     - pip
     - numpy
     - pandas
     - matplotlib
-    - jupyterlab>=3
+    - jupyterlab>=4
     - ipywidgets
-    - nodejs
     - r-irkernel
     - r-base>=4.0
     - r-tidyverse
     # For DUO example with DESeq2
-    - bioconductor-deseq2
-    - bioconductor-parathyroidse
+    #- bioconductor-deseq2
+    #- bioconductor-parathyroidse
     - pip:
         - bash_kernel
         - watermark
