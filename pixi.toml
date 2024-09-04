@@ -1,0 +1,25 @@
+[project]
+authors = ["Pierre Poulain <pierre.poulain@cupnet.net>"]
+channels = ["conda-forge", "bioconda", "nodefaults"]
+description = "Add a short description here"
+name = "jupyter-demo"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "*"
+pip = "*"
+numpy = "*"
+pandas = "*"
+matplotlib = "*"
+jupyterlab = ">=4"
+ipywidgets = "*"
+r-irkernel = "*"
+r-base = ">=4.0"
+r-tidyverse = "*"
+
+[pypi-dependencies]
+bash-kernel = "*"
+watermark = "*"
