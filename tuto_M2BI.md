@@ -4,9 +4,9 @@ author: Pierre Poulain
 license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 ---
 
-Tutoriel M2 BI
+# Tutoriel M2 BI
 
-# Préparation de l'environnement local
+## Préparation de l'environnement local
 
 Dans un environnement Unix, clonez ce dépôt GitHub :
 
@@ -59,8 +59,16 @@ Pour arrêter Jupyter Lab, pressez **deux** fois de suites les touches <kbd>Ctrl
 
 Remarque : fermer l'onglet de votre navigateur n'arrête pas le mini-serveur Jupyter.
 
+### Jupyter en ligne
 
-# Exercices
+Si Jupyter n'est pas installé localement sur votre machine, vous pouvez utiliser une version en ligne. Cette version peut prendre plusieurs minutes à charger, soyez patients et profitez-en pour vous préparer un thé en attendant.
+
+[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master?urlpath=lab)
+
+Les notebooks sont directement accessibles dans le répertoire `notebooks`.
+
+
+## Exercices
 
 Les notebooks Jupyter se trouvent dans le répertoire `notebooks`.
 
@@ -74,10 +82,11 @@ Ouvrez dans l'ordre les notebooks en double-cliquant sur leur nom.
 Suivez les instructions indiquées dans chaque notebook.
 
 
-# Jupyter en ligne
+## Pixi
 
-Si Jupyter n'est pas installé localement sur votre machine, vous pouvez utiliser une version en ligne. Cette version peut prendre plusieurs minutes à charger, soyez patients et profitez-en pour vous préparer un thé en attendant.
+Essayez d'utiliser Pixi pour construire l'environnement et lancer Jupyter Lab :
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/pierrepo/intro-jupyter/master?urlpath=lab)
+```bash
+$ pixi run jupyter-lab
+```
 
-Les notebooks sont directement accessibles dans le répertoire `notebooks`.
