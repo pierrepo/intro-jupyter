@@ -30,7 +30,7 @@
 <br />
 <br />
 
-2024
+2025
 
 <div class="container" style="margin-top: 50px;">
 <div class="col">
@@ -388,13 +388,24 @@ article : <a href="https://blog.jupyter.org/jupyterlab-is-ready-for-users-5a6f03
 ## Installation
 
 Depuis un environnement conda :
+
 ```bash
 $ conda install -c conda-forge jupyterlab
+$ jupyter-lab
 ```
 
-Lancement :
+Depuis un environnement uv :
+
 ```bash
-$ jupyter-lab
+$ uv add jupyterlab
+$ uv run jupyter-lab
+```
+
+Depuis un environnement pixi :
+
+```bash
+$ pixi add jupyterlab
+$ pixi run jupyter-lab
 ```
 
 ---
