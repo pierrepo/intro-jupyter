@@ -8,7 +8,7 @@ license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 
 ## Préparation de l'environnement local
 
-Dans un environnement Unix, clonez ce dépôt GitHub :
+Sur une machine Unix / Linux avec Pixi installé, clonez ce dépôt GitHub :
 
 ```bash
 $ git clone https://github.com/pierrepo/intro-jupyter.git
@@ -20,22 +20,10 @@ Entrez dans le répertoire `intro-jupyter` ainsi créé :
 $ cd intro-jupyter
 ```
 
-Créez ensuite l'environnement nécessaire avec conda :
+Puis, lancez Jupyter Lab :
 
 ```bash
-$ conda env create -f binder/environment.yml
-```
-
-Activez ce nouvel environnement :
-
-```bash
-$ conda activate jupyter-demo
-```
-
-Enfin, lancez Jupyter Lab :
-
-```bash
-$ jupyter-lab
+$ pixi run jupyter-lab
 ```
 
 Cette commande lance un mini-serveur web sur votre machine et ouvre normalement votre navigateur sur l'interface Jupyter Lab.
@@ -59,6 +47,7 @@ Pour arrêter Jupyter Lab, pressez **deux** fois de suites les touches <kbd>Ctrl
 
 Remarque : fermer l'onglet de votre navigateur n'arrête pas le mini-serveur Jupyter.
 
+
 ### Jupyter en ligne
 
 Si Jupyter n'est pas installé localement sur votre machine, vous pouvez utiliser une version en ligne. Cette version peut prendre plusieurs minutes à charger, soyez patients et profitez-en pour vous préparer un thé en attendant.
@@ -80,13 +69,3 @@ Ouvrez dans l'ordre les notebooks en double-cliquant sur leur nom.
 - `matplotlib.ipynb`
   
 Suivez les instructions indiquées dans chaque notebook.
-
-
-## Pixi
-
-Essayez d'utiliser Pixi pour construire l'environnement et lancer Jupyter Lab :
-
-```bash
-$ pixi run jupyter-lab
-```
-
