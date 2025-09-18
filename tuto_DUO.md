@@ -7,21 +7,16 @@ license: Creative Commons Attribution-ShareAlike (CC BY-SA 4.0)
 # Tutoriel DUO
 
 ## 1. Connexion
- 
-Ouvrez une session sur le Jupyter Hub de l'IFB. Pour cela :
 
-- Ouvrez une page de votre navigateur web à l'adresse <https://jupyterhub.cluster.france-bioinformatique.fr/>
-- Idendifiez-vous avec votre login et mot de passe IFB.
-- Sur la page *Server Options*, choississez :
-    + Reservation: No reservation
-    + Account: **202304_duo**
-    + Partition: fast
-    + CPU(s): 4
-    + Memory (in GB): 10
-    + GPU(s): 0
+Depuis le portail [Open OnDemand](https://ondemand.cluster.france-bioinformatique.fr/) de l’IFB, lancez l’application JupyterLab avec les paramètres suivants :
 
-    Votre instance Jupyter disposera donc de 4 processeurs, de 10 Go de RAM, et sera active 12 h (après ce laps de temps, elle sera détruite).
-- Cliquez sur le bouton *Start* puis patientez quelques instants le temps que votre serveur Jupyter s'initialise.
+- Reservation: `No reservation`
+- Account: `2501_duo` ⚠️
+- Partition: `fast`
+- Number of CPUs: `4` ⚠️
+- Amount of memory: `10G` ⚠️ (*n'oubliez pas le **G** à **10G***)
+- GPUs: `No GPU`
+- Number of hours: `8` ⚠️
 
 
 ## 2. Orientation
@@ -30,8 +25,8 @@ Vous êtes déjà familiers de l'interface JupyterLab, mais voici quelques rappe
 
 - Vous trouverez sur la gauche un explorateur de fichier qui vous permet de naviguer graphiquement dans l'arborescence du serveur.
     + Votre répertoire utilisateur se trouve dans `/shared/home/USERNAME` où `USERNAME` est votre nom d'utilisateur.
-    + Votre répertoire de projet se trouve dans `/shared/projects/202304_duo/USERNAME` où `USERNAME` est votre nom d'utilisateur. Je vous rappelle que c'est **dans ce répertoire** que vous devez travailler.
-- Sur la partie droite de l'interface JupyterLab, vous avez le *Launcher* qui, comment son nom l'indique, permet de *lancer* (créer) des notebooks Jupyter dans plusieurs langages (Python, Bash ou R), RStudio, un terminal et plein d'autres choses.
+    + Votre répertoire de projet se trouve dans `/shared/projects/2501_duo/USERNAME` où `USERNAME` est votre nom d'utilisateur. Je vous rappelle que c'est **dans ce répertoire** que vous devez travailler.
+- Sur la partie droite de l'interface JupyterLab, vous avez le *Launcher* qui, comment son nom l'indique, permet de *lancer* (créer) des notebooks Jupyter dans plusieurs langages (Python, Bash ou R), un terminal et plein d'autres choses.
 
 En bas de la page, dans la rubrique *Other*, cliquez sur l'icône *Terminal* qui va lancer un terminal Unix dans JupyterLab.
 
@@ -41,7 +36,7 @@ En bas de la page, dans la rubrique *Other*, cliquez sur l'icône *Terminal* qui
 Depuis un terminal lancé dans JupyterLab, déplacez-vous dans votre répertoire de travail avec la commande :
 
 ```bash
-$ cd /shared/projects/202304_duo/$USER
+$ cd /shared/projects/2501_duo/$USER
 ```
 
 Exécutez ensuite la commande suivante :
@@ -78,7 +73,7 @@ Suivez ensuite les instructions dans le notebook.
 Créez un nouveau notebook Jupyter avec un **noyau R** (>= 4). Pour cela :
 
 - Cliquez sur le gros bouton bleu "+" en haut à gauche de l'interface JupyterLab.
-- Dans la section *Notebook*, cliquez sur l'icône *R* (normalement R 4.0.3).
+- Dans la section *Notebook*, cliquez sur l'icône *R* (avec R 4.5.1).
 
 Renommez ce nouveau notebook `analyse_DESeq2.ipynb` (clic droit sur le nom du notebook puis *Rename Notebook...*).
 
@@ -91,6 +86,7 @@ Une fois téléchargé dans JupyterLab, double-cliquez sur le nom du script pour
 Transformez ce script en notebook Jupyter en reportant les commandes R dans des cellules de code. Utilisez des cellules Markdown pour ajouter des commentaires sur les cellules de code et refléter la structure du script initial. Dans la barre d'outils au-dessus du notebook, un menu permet de changer le type de cellule (Code ou Markdown).
 
 N'oubliez pas d'exécuter votre notebook pour vérifier que celui-ci fonctionne correctement.
+
 
 **Remarques :** 
 
