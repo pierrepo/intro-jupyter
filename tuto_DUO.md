@@ -45,7 +45,7 @@ $ cd /shared/projects/2501_duo/$USER
 Exécutez ensuite la commande suivante :
 
 ```bash
-$ git clone https://github.com/pierrepo/intro-jupyter
+$ git clone --depth 1 https://github.com/pierrepo/intro-jupyter
 ```
 
 Vérifiez en ligne de commande, dans votre terminal, que le répertoire `intro-jupyter` a bien été créé.
@@ -59,7 +59,7 @@ Pour la suite, vous trouverez les notebooks d'exercice dans le répertoire `intr
 
 Ouvrez le notebook `intro_R.ipynb` en double-cliquant sur son nom depuis l'explorateur de fichiers (à gauche).
 
-Si on vous le demande, sélectionnez si besoin un kernel R >= 4.
+Si on vous le demande, sélectionnez un kernel R >= 4 (par exemple R 4.4.1).
 
 Suivez ensuite les instructions dans le notebook.
 
