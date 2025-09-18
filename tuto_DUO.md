@@ -39,8 +39,7 @@ Depuis un terminal lancé dans JupyterLab, déplacez-vous dans votre répertoire
 $ cd /shared/projects/2501_duo/$USER
 ```
 
-> [!NOTE]
-> Ne tapez pas le caractère $ en début de ligne et faites attention aux majuscules et au minuscules.
+> 📢 Ne tapez pas le caractère `$` en début de ligne et faites attention aux majuscules et aux minuscules.
 
 
 Exécutez ensuite la commande suivante :
